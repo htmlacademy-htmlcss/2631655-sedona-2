@@ -8,3 +8,7 @@
 node_modules/
 npm-debug.*
 Thumbs.db
+package-lock.json
+package.json
+.prettierrc
+.prettierignore
