@@ -55,7 +55,7 @@
       <section class="catalog-services">
         <h2 class="visually-hidden">Список услуг с фильтрами</h2>
 
-        <form class="catalog-services__filter" action="https://echo.htmlacademy.ru/">
+        <form class="catalog-services__filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-services__group">
             <legend class="catalog-services__title">Инфраструктура:</legend>
             <ul class="catalog-services__list">
@@ -98,13 +98,13 @@
             <legend class="catalog-services__title">Стоимость, ₽:</legend>
             <ul class="catalog-services__list">
               <li class="catalog-services__item">
-                <label class="range"><input class="range__input" type="number" placeholder="0">От</label>
+                <label class="range"><input class="range__input" type="number" placeholder="0" name="start-price">От</label>
               </li>
               <li class="catalog-services__item">
-                <label class="range"><input class="range__input" type="number" placeholder="9000">До</label>
+                <label class="range"><input class="range__input" type="number" placeholder="9000" name="end-price">До</label>
               </li>
               <li class="catalog-services__item">
-                <label class="range"><input class="range__input" type="range"></label>
+                <label class="range"><input class="range__input" type="range" name="price-range"></label>
               </li>
             </ul>
           </fieldset>
