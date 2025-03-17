@@ -2,15 +2,15 @@
 <html lang="ru">
 
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.link" />
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.link">
     <title>HTML Academy: Седона</title>
   </head>
 
   <body>
     <header class="page-header">
       <a href="page-header__logo"><img src="/img/logo.svg"
-          alt="Логотип: изображен в виде перевернутой пирамиды внутри которой изображены горы, а нижняя часть пирамиды изображена ввиде моста" /><span
+          alt="Логотип: изображен в виде перевернутой пирамиды внутри которой изображены горы, а нижняя часть пирамиды изображена ввиде моста"><span
           class="visually-hidden">Логотип сайта</span></a>
       <nav class="navigation">
         <ul class="navigation__list">
@@ -61,15 +61,15 @@
             <ul class="catalog-services__list">
               <li class="catalog-services__item">
                 <label class="control">
-                  <input type="checkbox" class="control__input" name="swimming-pool" checked />Бассейн</label>
+                  <input type="checkbox" class="control__input" name="swimming-pool" checked>Бассейн</label>
               </li>
               <li class="catalog-services__item">
                 <label class="control">
-                  <input type="checkbox" class="control__input" name="parking" checked />Парковка</label>
+                  <input type="checkbox" class="control__input" name="parking" checked>Парковка</label>
               </li>
               <li class="catalog-services__item">
                 <label class="control">
-                  <input type="checkbox" class="control__input" name="wi-fi" />Wi-Fi</label>
+                  <input type="checkbox" class="control__input" name="wi-fi">Wi-Fi</label>
               </li>
             </ul>
           </fieldset>
@@ -79,18 +79,32 @@
             <ul class="catalog-services__list">
               <li class="catalog-services__item">
                 <label class="control">
-                  <input type="radio" class="control__input" name="type-of-housing" value="hotel" checked />Гостиница
+                  <input type="radio" class="control__input" name="type-of-housing" value="hotel" checked>Гостиница
                 </label>
               </li>
               <li class="catalog-services__item">
                 <label class="control">
-                  <input type="radio" class="control__input" name="type-of-housing" value="hostel" />Мотель
+                  <input type="radio" class="control__input" name="type-of-housing" value="hostel">Мотель
                 </label>
               </li>
               <li class="catalog-services__item">
                 <label class="control">
-                  <input type="radio" class="control__input" name="type-of-housing" value="apartaments" />Апартаменты
+                  <input type="radio" class="control__input" name="type-of-housing" value="apartaments">Апартаменты
                 </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="catalog-services__group">
+            <legend class="catalog-services__title">Стоимость, ₽:</legend>
+            <ul class="catalog-services__list">
+              <li class="catalog-services__item">
+                <label class="range"><input class="range__input" type="number" placeholder="0">От</label>
+              </li>
+              <li class="catalog-services__item">
+                <label class="range"><input class="range__input" type="number" placeholder="9000">До</label>
+              </li>
+              <li class="catalog-services__item">
+                <label class="range"><input class="range__input" type="range"></label>
               </li>
             </ul>
           </fieldset>
@@ -104,75 +118,74 @@
       <section class="sorting">
         <h2 class="visually-hidden">Результат сортировки</h2>
         <span class="sorting__result">Найдено гостиниц: 38</span>
-        <select name="" id="" class="select-control" aria-label="Сортировка">
-          <option value="">Сначала популярные</option>
-          <option value="">Сначала дешевое</option>
-          <option value="">Сначала дорогое</option>
+        <select name="sorting-menu" class="select-control" aria-label="Сортировка">
+          <option value="popupal-first">Сначала популярные</option>
+          <option value="cheap-first">Сначала дешевое</option>
+          <option value="expensive-first">Сначала дорогое</option>
         </select>
         <a href="#" class="button sorting__button"><span class="visually-hidden">Показать список</span></a>
         <a href="#" class="button sorting__button"><span class="visually-hidden">Показать карточки</span></a>
-        <a href="#" class="button sorting__button"><span class="visually-hidden">Показать списком и
-            карточками</span></a>
+        <a href="#" class="button sorting__button"><span class="visually-hidden">Показать по одному</span></a>
       </section>
 
       <ul class="services__list">
         <li class="services-card">
           <a href="#" class="services-card__link">
-            <img src="/img/Amara Resort & Spa.jpg"
-              alt="Картинка: вид на ночное небо со звездами между двух скалистых гор" class="services-card__image" />
+            <img src="/img/Amara_Resort_&_Spa.jpg"
+              alt="Картинка: вид на ночное небо со звездами между двух скалистых гор" class="services-card__image">
             <h3 class="services-card__heading">Amara Resort & Spa</h3>
+            </a>
             <span class="services-card__name">Гостиница</span>
             <span class="services-card__price">От 5000 ₽</span>
-            <a href="" class="button services-card__button--brown">подробнее</a>
+            <a href="#" class="button services-card__button--brown">подробнее</a>
             <button class="services-card__favorite--blue">в избранное</button>
-            <img src="/img/4stars.png" alt="Иконка: четыре звезды голубого цвета" class="services-card__image" />
+            <img src="/img/4stars.png" alt="Иконка: четыре звезды голубого цвета" class="services-card__image">
             <span class="services-card__raiting">Рейтинг: 8,5</span>
-          </a>
         </li>
 
         <li class="services-card">
           <a href="#" class="services-card__link">
-            <img src="/img/Villas at Poco Diablo.jpg"
+            <img src="/img/Villas_at_Poco_Diablo.jpg"
               alt="Картинка: вид из далека, вначале изображено множество деревьев в тени, а вдали изображена гора на которую падают лучи солнца. На небе тучи с ели заметной радугой"
-              class="services-card__image" />
+              class="services-card__image">
             <h3 class="services-card__heading">Villas at Poco Diablo</h3>
+          </a>
             <span class="services-card__name">Гостиница</span>
             <span class="services-card__price">От 2500 ₽</span>
             <a href="#" class="button services-card__button--brown">подробнее</a>
             <button class="services-card__favorite--green">в избранном</button>
-            <img src="/img/4stars.png" alt="Иконка: четыре звезды голубого цвета" class="services-card__image" />
+            <img src="/img/4stars.png" alt="Иконка: четыре звезды голубого цвета" class="services-card__image">
             <span class="services-card__raiting">Рейтинг: 9,2</span>
-          </a>
         </li>
 
         <li class="services-card">
           <a href="#" class="services-card__link">
-            <img src="/img/Desert Quail Inn.jpg"
+            <img src="/img/Desert_Quail_Inn.jpg"
               alt="Картинка: вид из далека, вначале изображено множество деревьев, а сразу за ними глинянная гора. Небо голубое с небольшим количество тучь позади"
-              class="services-card__image" />
+              class="services-card__image">
             <h3 class="services-card__heading">Desert Quail Inn</h3>
+          </a>
             <span class="services-card__name">Гостиница</span>
             <span class="services-card__price">От 1500 ₽</span>
             <a href="#" class="button services-card__button--brown">подробнее</a>
             <button class="services-card__favorite--blue">в избранное</button>
-            <img src="/img/3stars.png" alt="Иконка: три звезды голубого цвета" class="services-card__image" />
+            <img src="/img/3stars.png" alt="Иконка: три звезды голубого цвета" class="services-card__image">
             <span class="services-card__raiting">Рейтинг: 6,9</span>
-          </a>
         </li>
 
         <li class="services-card">
           <a href="#" class="services-card__link">
-            <img src="img/GreenTree Inn.jpg"
+            <img src="img/GreenTree_Inn.jpg"
               alt="Картинка: гора на фоне звездного ночного неба на которую падает слева свет от солнца"
-              class="services-card__image" />
+              class="services-card__image">
             <h3 class="services-card__heading">GreenTree Inn</h3>
+          </a>
             <span class="services-card__name">Гостиница</span>
             <span class="services-card__price">От 4000 ₽</span>
             <a href="#" class="button services-card__button--brown">подробнее</a>
             <button class="services-card__favorite--blue">в избранное</button>
-            <img src="/img/2stars.png" alt="Иконка: две звезды голубого цвета" class="services-card__image" />
+            <img src="/img/2stars.png" alt="Иконка: две звезды голубого цвета" class="services-card__image">
             <span class="services-card__raiting">Рейтинг: 5,0</span>
-          </a>
         </li>
       </ul>
 
@@ -207,7 +220,7 @@
         </p>
         <form class="newsletter__form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="newsletter-email"></label>
-          <input type="email" placeholder="Ваш e-mail" name="newsletter-date" id="newsletter-email" required />
+          <input type="email" placeholder="Ваш e-mail" name="newsletter-date" id="newsletter-email" required>
           <button class="button" type="submit">подписаться</button>
         </form>
       </section>
