@@ -5,29 +5,31 @@
     <meta charset="utf-8">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
 
     <header class="page-header">
-      <a class="page-header__logo" href="index.html" aria-current="page"><img src="images/logo.svg" width="140"
-          height="70"
-          alt="Логотип: изображен в виде перевернутой пирамиды внутри которой изображены горы, а нижняя часть пирамиды изображена ввиде моста"><span
-          class="visually-hidden">Логотип сайта</span></a>
       <nav class="navigation">
+
+        <a class="page-header__logo" href="index.html" aria-current="page"><img src="images/logo.svg" width="140"
+            height="70"
+            alt="Логотип: изображен в виде перевернутой пирамиды внутри которой изображены горы, а нижняя часть пирамиды изображена ввиде моста"><span
+            class="visually-hidden">Логотип сайта</span></a>
         <ul class="navigation__list">
-          <li class="navigation__list-item"><a href="#" class="navigation__list-link">Главная</a></li>
-          <li class="navigation__list-item"><a href="#" class="navigation__list-link">О седоне</a></li>
-          <li class="navigation__list-item"><a href="catalog.html" class="navigation__list-link">Гостиницы</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link">Главная</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link">О Седоне</a></li>
+          <li class="navigation__item"><a href="catalog.html" class="navigation__link">Гостиницы</a></li>
         </ul>
 
-        <ul class="navigation__list navigation__user">
-          <li class="navigation__list-item navigation__list-link"><a href="#" class="navigation__link search-icon"><span
-                class="visually-hidden">Поиск</span></a></li>
-          <li class="navigation__list-item navigation__list-link"><a href="#"
-              class="navigation__link favorite-icon"><span class="visually-hidden">Избранное</span></a></li>
-          <li class="navigation__list-item navigation__list-link"><a href="#"
-              class="navigation__link navigation__button"><span class="visually-hidden">Хочу сюда</span></a></li>
+        <ul class="navigation__list navigation-user">
+          <li class="navigation__item"><a href="#" class="navigation-user__link search-icon">
+              <span class="visually-hidden">Поиск</span></a></li>
+          <li class="navigation__item"><a href="#" class="navigation-user__link favorite-icon"><span
+                class="visually-hidden">Избранное</span></a></li>
+          <li class="navigation__item"><a href="#"
+              class="navigation-user__link navigation-user__link-wanna-here button">хочу сюда!</a></li>
         </ul>
       </nav>
     </header>
@@ -38,17 +40,18 @@
 
         <section class="hero">
           <h1 class="visually-hidden">Седона — небольшой городок в Аризоне</h1>
-          <img class="advantages__top-img" src="images/welcome.svg" width="458" height="352"
+          <img class="hero__img" src="images/welcome.svg" width="458" height="352"
             alt="Welcome to the gorgeous Sedona Because the Grand Canyon sucks!">
         </section>
 
         <h2 class="visually-hidden">Преймущества</h2>
-        <h3 class="advantages__header">cедона — небольшой городок в аризоне, заслуживающий большего!</h3>
-        <p class="advantages__text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        <h3 class="advantages__main-header">cедона — небольшой городок в аризоне, заслуживающий большего!</h3>
+        <p class="advantages__main-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         <ul class="advantages__list">
           <li class="advantages__item">
-            <h3 class="advantages__header">настоящий городок</h3>
-            <p class="advantages__text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <h3 class="advantages__header advantages__header--white">настоящий городок</h3>
+            <p class="advantages__text advantages__text--white">Седона — не аттракцион для туристов, там течёт своя
+              жизнь</p>
             <img class="advantages__img" src="images/true_town.jpg" width="800" height="385"
               alt="Двухэтажная постройка с кафе или рестораном">
           </li>
@@ -67,8 +70,9 @@
           <li class="advantages__item">
             <img class="advantages__img" width="800" height="385" src="images/devil_bridge.jpg"
               alt="«Мост дьявола» из горных пород на фоне других гор">
-            <h3 class="advantages__header">там есть мост дьявола</h3>
-            <p class="advantages__text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            <h3 class="advantages__header advantages__header--white">там есть мост дьявола</h3>
+            <p class="advantages__text advantages__text--white">Да, по нему можно пройти! Если вы осмелитесь, разумеется
+            </p>
           </li>
         </ul>
 
@@ -93,36 +97,37 @@
 
       <section class="hotel-search">
         <h2 class="visually-hidden">Поиск гостиницы</h2>
-        <span class="hotel-search__header">Заинтересовались?</span>
+        <span class="hotel-search__subtitle">Заинтересовались?</span>
         <p class="hotel-search__text">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в
           Седоне</p>
         <button class="hotel-search__button button">поиск гостиницы в седоне</button>
       </section>
     </main>
 
-    <footer class="footer-index">
+    <footer class="footer">
       <section class="newsletter">
         <h2 class="visually-hidden">Новостная рассылка</h2>
         <span class="newsletter__header">подпишитесь на рассылку</span>
-        <p class="newsletter__text">только полезная информация и никакого спама, честное бойскаутское!</p>
+        <p class="newsletter__text">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter__form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="visually-hidden">
-            <input type="email" placeholder="Ваш e-mail" name="newsletter-date" required>
-          </label>
-          <button class="button" type="submit">подписаться</button>
+          <input type="email" placeholder="Ваш e-mail" name="newsletter-date" required>
+          <button class="newsletter__button button" type="submit">подписаться</button>
         </form>
       </section>
 
-      <section class="footer-index__social">
+      <section class="footer__social">
         <h2 class="visually-hidden">Социальные сети</h2>
-        <ul class="footer-index__list">
-          <li class="footer-index__item"><a href="https://vk.com/htmlacademy" class="button"></a>
+        <ul class="footer__list">
+          <li class="footer__item"><a href="https://vk.com/htmlacademy"
+              class="footer__link-socials link-socials__vk"></a>
             <span class="visually-hidden">Вконтакте</span>
           </li>
-          <li class="footer-index__item"><a href="https://t.me/htmlacademy" class="button"></a>
+          <li class="footer__item"><a href="https://t.me/htmlacademy"
+              class="footer__link-socials link-socials__telegram"></a>
             <span class="visually-hidden">Телеграм</span>
           </li>
-          <li class="footer-index__item"><a href="https://www.youtube.com/user/htmlacademyru" class="button"></a>
+          <li class="footer__item"><a href="https://www.youtube.com/user/htmlacademyru"
+              class="footer__link-socials link-socials__youtube"></a>
             <span class="visually-hidden">Ютуб</span>
           </li>
         </ul>
@@ -130,10 +135,10 @@
 
       <section class="footer__contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <a href="tel:+7(812)812-12-12" class="footer-index__phone">+7 (812) 812-12-12</a>
+        <a href="tel:+7(812)812-12-12" class="footer__phone">+7 (812) 812-12-12</a>
       </section>
 
-      <a href="https://htmlacademy.ru/" class="footer-index__about-text">
+      <a href="https://htmlacademy.ru/" class="footer__about-text">
         <span class="visually-hidden">Логотип HTML Academy</span>
       </a>
 
