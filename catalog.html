@@ -33,98 +33,114 @@
       </nav>
     </header>
 
+
+
     <main class="main-catalog">
-      <section class="hotels">
-        <h1 class="hotels__header">Гостиницы Седоны</h1>
-        <ul class="hotels__list">
-          <li class="hotels__item">
-            <a href="index.html" class="hotels__breadcrumbs hotels__home"></a>
-          </li>
-          <li class="hotels__item">
-            <a class="hotels__breadcrumbs">Гостиницы</a>
-          </li>
-        </ul>
-      </section>
+
+
 
       <section class="catalog-services">
+        <ul class="catalog-services__list">
+          <li class="catalog-services__item">
+            <a href="index.html" class="catalog-services__breadcrumbs catalog-services__home"></a>
+          </li>
+          <li class="catalog-services__item">
+            <h1 class="catalog-services__header">Гостиницы Седоны</h1>
+            <a class="catalog-services__breadcrumbs">Гостиницы</a>
+          </li>
+        </ul>
+
         <h2 class="visually-hidden">Список услуг с фильтрами</h2>
 
+
         <form class="catalog-services__filter" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="catalog-services__group">
-            <legend class="catalog-services__title">Инфраструктура:</legend>
-            <ul class="catalog-services__list">
-              <li class="catalog-services__item">
-                <label class="control">
-                  <input type="checkbox" class="control__input" name="swimming-pool" checked>Бассейн</label>
-              </li>
-              <li class="catalog-services__item">
-                <label class="control">
-                  <input type="checkbox" class="control__input" name="parking" checked>Парковка</label>
-              </li>
-              <li class="catalog-services__item">
-                <label class="control">
-                  <input type="checkbox" class="control__input" name="wi-fi">Wi-Fi</label>
-              </li>
-            </ul>
-          </fieldset>
 
-          <fieldset class="catalog-services__group">
-            <legend class="catalog-services__title">Тип жилья:</legend>
-            <ul class="catalog-services__list">
-              <li class="catalog-services__item">
-                <label class="control">
-                  <input type="radio" class="control__input" name="type-of-housing" value="hotel" checked>Гостиница
-                </label>
-              </li>
-              <li class="catalog-services__item">
-                <label class="control">
-                  <input type="radio" class="control__input" name="type-of-housing" value="hostel">Мотель
-                </label>
-              </li>
-              <li class="catalog-services__item">
-                <label class="control">
-                  <input type="radio" class="control__input" name="type-of-housing" value="apartaments">Апартаменты
-                </label>
-              </li>
-            </ul>
-          </fieldset>
+          <div class="catalog__main-container">
 
-          <fieldset class="catalog-services__group">
-            <legend class="catalog-services__title">Стоимость, ₽:</legend>
-            <ul class="catalog-services__list">
-              <li class="catalog-services__item">
-                <label class="range"><input class="range__input" type="number" placeholder="0"
-                    name="start-price">От</label>
-              </li>
-              <li class="catalog-services__item">
-                <label class="range"><input class="range__input" type="number" placeholder="9000"
-                    name="end-price">До</label>
-              </li>
-              <li class="catalog-services__item">
-                <label class="range"><input class="range__input" type="range" min="0" max="100" step="5" value="75"
-                    name="price-range"></label>
-              </li>
-            </ul>
-          </fieldset>
+            <fieldset class="catalog-services__group">
+              <legend class="catalog-services__title">Инфраструктура:</legend>
+              <ul class="catalog-services__list">
+                <li class="catalog-services__item">
+                  <label class="control">
+                    <input type="checkbox" class="control__input" name="swimming-pool" checked>Бассейн</label>
+                </li>
+                <li class="catalog-services__item">
+                  <label class="control">
+                    <input type="checkbox" class="control__input" name="parking" checked>Парковка</label>
+                </li>
+                <li class="catalog-services__item">
+                  <label class="control">
+                    <input type="checkbox" class="control__input" name="wi-fi">Wi-Fi</label>
+                </li>
+              </ul>
+            </fieldset>
 
-          <button class="button catalog-services__button catalog-services__button--blue" type="button">применить</button>
-          <button class="button catalog-services__button catalog-services__button--transparent" type="reset">
-            сбросить
-          </button>
+            <fieldset class="catalog-services__group">
+              <legend class="catalog-services__title">Тип жилья:</legend>
+              <ul class="catalog-services__list">
+                <li class="catalog-services__item">
+                  <label class="control">
+                    <input type="radio" class="control__input" name="type-of-housing" value="hotel" checked>Гостиница
+                  </label>
+                </li>
+                <li class="catalog-services__item">
+                  <label class="control">
+                    <input type="radio" class="control__input" name="type-of-housing" value="hostel">Мотель
+                  </label>
+                </li>
+                <li class="catalog-services__item">
+                  <label class="control">
+                    <input type="radio" class="control__input" name="type-of-housing" value="apartaments">Апартаменты
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+
+
+            <fieldset class="catalog-services__group">
+              <legend class="catalog-services__title">Стоимость, ₽:</legend>
+              <ul class="catalog-services__list">
+                <li class="catalog-services__item">
+                  <label class="range"><input class="range__input" type="number" placeholder="0"
+                      name="start-price">От</label>
+                </li>
+                <li class="catalog-services__item">
+                  <label class="range"><input class="range__input" type="number" placeholder="9000"
+                      name="end-price">До</label>
+                </li>
+                <li class="catalog-services__item">
+                  <label class="range"><input class="range__input" type="range" min="0" max="100" step="5" value="75"
+                      name="price-range"></label>
+                </li>
+              </ul>
+            </fieldset>
+            <div class="catalog__buttons-container">
+              <button class="button catalog-services__button catalog-services__button--blue"
+                type="submit">применить</button>
+              <button class="button catalog-services__button catalog-services__button--transparent" type="reset">
+                сбросить
+              </button>
+            </div>
+          </div>
         </form>
       </section>
 
       <section class="sorting">
         <h2 class="visually-hidden">Результат сортировки</h2>
         <span class="sorting__result">Найдено гостиниц: 38</span>
-        <select name="sorting-menu" class="select-control" aria-label="Сортировка">
-          <option value="popupal-first">Сначала дешевые</option>
-          <option value="cheap-first">Сначала дорогие</option>
-          <option value="expensive-first">Сначала популярные</option>
-        </select>
-        <a href="#" class="button sorting__button sorting__button-list"><span class="visually-hidden">Показать список</span></a>
-        <a href="#" class="button sorting__button sorting__button-cards"><span class="visually-hidden">Показать карточки</span></a>
-        <a href="#" class="button sorting__button sorting__button-onebyone"><span class="visually-hidden">Показать по одному</span></a>
+        <div class="sorting__container">
+          <select name="sorting-menu" class="select-control" aria-label="Сортировка">
+            <option value="popupal-first">Сначала дешевые</option>
+            <option value="cheap-first">Сначала дорогие</option>
+            <option value="expensive-first">Сначала популярные</option>
+          </select>
+          <a href="#" class="button sorting__button sorting__button-list"><span class="visually-hidden">Показать
+              список</span></a>
+          <a href="#" class="button sorting__button sorting__button-cards"><span class="visually-hidden">Показать
+              карточки</span></a>
+          <a href="#" class="button sorting__button sorting__button-onebyone"><span class="visually-hidden">Показать по
+              одному</span></a>
+        </div>
       </section>
 
       <ul class="services__list">
@@ -151,8 +167,9 @@
           </a>
           <span class="services-card__name">Гостиница</span>
           <span class="services-card__price">От 2500 ₽</span>
-          <a href="#" class="services-card__link services-card__link--brown">подробнее</a>
-          <button class=" button services-card__favorite services-card__favorite--green" type="button">в избранном</button>
+          <a href="#" class="button services-card__link services-card__link--brown">подробнее</a>
+          <button class="button services-card__favorite services-card__favorite--green" type="button">в
+            избранном</button>
           <img src="images/4-stars.png" alt="Четыре звезды голубого цвета" class="services-card__stars-image">
           <span class="services-card__raiting">Рейтинг: 9,2</span>
         </li>
@@ -167,7 +184,8 @@
           <span class="services-card__name">Гостиница</span>
           <span class="services-card__price">От 1500 ₽</span>
           <a href="#" class="button services-card__link services-card__link--brown">подробнее</a>
-          <button class="button services-card__favorite services-card__favorite--blue" type="button">в избранное</button>
+          <button class="button services-card__favorite services-card__favorite--blue" type="button">в
+            избранное</button>
           <img src="images/3-stars.png" alt="Три звезды голубого цвета" class="services-card__stars-image">
           <span class="services-card__raiting">Рейтинг: 6,9</span>
         </li>
@@ -182,7 +200,8 @@
           <span class="services-card__name">Гостиница</span>
           <span class="services-card__price">От 4000 ₽</span>
           <a href="#" class="button services-card__link services-card__link--brown">подробнее</a>
-          <button class="button services-card__favorite services-card__favorite--blue" type="button">в избранное</button>
+          <button class="button services-card__favorite services-card__favorite--blue" type="button">в
+            избранное</button>
           <img src="images/2-stars.png" alt="Две звезды голубого цвета" class="services-card__stars-image">
           <span class="services-card__raiting">Рейтинг: 5,0</span>
         </li>
@@ -210,11 +229,15 @@
       </ul>
     </main>
 
+
+
+
     <footer class="footer">
       <section class="newsletter newsletter-catalog">
         <h2 class="visually-hidden">Новостная рассылка</h2>
         <span class="newsletter__header newsletter__header-catalog">подпишитесь на рассылку</span>
-        <p class="newsletter__text newsletter__text-catalog">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <p class="newsletter__text newsletter__text-catalog">Только полезная информация и никакого спама, честное
+          бойскаутское!</p>
         <form class="newsletter__form" action="https://echo.htmlacademy.ru/" method="post">
           <input type="email" placeholder="Ваш e-mail" name="newsletter-date" required>
           <button class="button newsletter__button" type="submit">подписаться</button>
