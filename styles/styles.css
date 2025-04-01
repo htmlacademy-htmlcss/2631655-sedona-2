@@ -104,7 +104,7 @@ body {
 
 .search-icon {
   display: flex;
-  background-image: url(/images/search.svg);
+  background-image: url(images/search.svg);
   background-size: 100%;
   background-repeat: no-repeat;
   padding: 22px 12px;
@@ -114,7 +114,7 @@ body {
 
 .favorite-icon {
   display: flex;
-  background-image: url(/images/favorite.svg);
+  background-image: url(images/favorite.svg);
   background-size: 100%;
   background-repeat: no-repeat;
   padding: 22px 12px;
@@ -140,7 +140,7 @@ body {
 }
 
 .hero {
-  background-image: url(/images/index-background.jpg);
+  background-image: url(images/index-background.jpg);
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: left top;
@@ -263,17 +263,17 @@ body {
   justify-content: center;
   width: 400px;
   min-height: 385px;
-  background-image: url(/images/house.svg);
+  background-image: url(images/house.svg);
   background-repeat: no-repeat;
   background-position: 162px 70px;
 }
 
 .recomendations__item:nth-child(2) {
-  background-image: url(/images/burger.svg);
+  background-image: url(images/burger.svg);
 }
 
 .recomendations__item:nth-child(3) {
-  background-image: url(/images/gift.svg);
+  background-image: url(images/gift.svg);
 }
 
 .recomendations__item:nth-child(odd) {
@@ -363,7 +363,7 @@ body {
 }
 
 .newsletter {
-  background-image: url(/images/newsletter.jpg);
+  background-image: url(images/newsletter.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
   min-height: 414px;
@@ -446,15 +446,15 @@ body {
 }
 
 .link-socials__vk {
-  background-image: url(/images/vk.svg);
+  background-image: url(images/vk.svg);
 }
 
 .link-socials__telegram {
-  background-image: url(/images/telegram.svg);
+  background-image: url(images/telegram.svg);
 }
 
 .link-socials__youtube {
-  background-image: url(/images/youtube.svg);
+  background-image: url(images/youtube.svg);
 }
 
 .footer__phone {
@@ -466,7 +466,7 @@ body {
 }
 
 .footer__about-text {
-  background-image: url(/images/logo_htmlacademy.png);
+  background-image: url(images/logo_htmlacademy.png);
   width: 115px;
   height: 33px;
   background-position: center;
@@ -509,7 +509,7 @@ body {
 }
 
 .catalog-services {
-  background-image: url(/images/filter-bg.jpg);
+  background-image: url(images/filter-bg.jpg);
   background-color: #82b3d3;
   background-repeat: no-repeat;
 }
@@ -520,7 +520,7 @@ body {
 }
 
 .catalog-services__home {
-  background-image: url(/images/home.svg);
+  background-image: url(images/home.svg);
   width: 12px;
   height: 12px;
   background-size: 100%;
@@ -633,16 +633,16 @@ body {
 }
 
 .sorting__button-list {
-  background-image: url(/images/list.svg);
+  background-image: url(images/list.svg);
   border: 2px solid #000;
 }
 
 .sorting__button-cards {
-  background-image: url(/images/cards.svg);
+  background-image: url(images/cards.svg);
 }
 
 .sorting__button-onebyone {
-  background-image: url(/images/onebyone.svg);
+  background-image: url(images/onebyone.svg);
 }
 
 .services__list {
