@@ -77,7 +77,7 @@ body {
 
 .navigation__list {
   margin: 0;
-  margin-left: 238px;
+  margin-left: 160px;
   padding-left: 28px;
   display: flex;
   justify-content: space-between;
@@ -187,7 +187,7 @@ body {
   text-align: center;
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 0 64px 0;
 }
 
 .advantages__item {
@@ -209,7 +209,7 @@ body {
 .advantages__top-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   width: 400px;
 }
 
@@ -217,7 +217,7 @@ body {
 .advantages__bottom-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   width: 400px;
 }
 
@@ -232,8 +232,8 @@ body {
 }
 
 .advantages__header {
-  width: 175px;
-  margin: 0 auto;
+  width: 172px;
+  margin: 0 auto 62px auto;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
@@ -245,8 +245,40 @@ body {
   width: 230px;
 }
 
+/* ============================================================================================================ */
 
+.recomendations__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
 
+.recomendations__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 400px;
+  min-height: 385px;
+  background-image: url(/images/house.svg);
+  background-repeat: no-repeat;
+  background-position: 162px 70px;
+}
+
+.recomendations__item:nth-child(2) {
+  background-image: url(/images/burger.svg);
+}
+
+.recomendations__item:nth-child(3) {
+  background-image: url(/images/gift.svg);
+}
+
+.recomendations__item:nth-child(odd) {
+  background-color: rgba(131, 179, 211, 0.12);
+}
 
 .recomendations__header {
   font-size: 30px;
@@ -257,7 +289,21 @@ body {
   margin: 0 0 20px 348px;
 }
 
+.recomendations__description {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 80px 0 30px 0;
+}
+
 .recomendations__text {
+  margin: 0 auto;
+  width: 230px;
+  align-items: center;
+}
+
+.recomendations__main-text {
   font-style: 22px;
   line-height: 26px;
   width: 490px;
@@ -265,27 +311,9 @@ body {
   margin: 0 0 64px 355px;
 }
 
-.recomendations__list {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  flex-wrap: wrap;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
 
-.recomendations__item:nth-child(odd) {
-  background-color: rgba(131, 179, 211, 0.12);
-}
+/* ============================================================================================================ */
 
-.recomendations__description {
-  font-size: 24px;
-  line-height: 28px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
 
 .hotel-search {
   display: flex;
@@ -324,6 +352,10 @@ body {
   padding: 8px 0;
 }
 
+
+/* ============================================================================================================ */
+
+
 .footer {
   width: 1200px;
   margin: 0 auto;
@@ -351,6 +383,8 @@ body {
 }
 
 .newsletter__text {
+  width: 475px;
+  text-align: center;
   font-size: 22px;
   line-height: 26px;
   color: #fff;
@@ -477,7 +511,6 @@ body {
 .catalog-services {
   background-image: url(/images/filter-bg.jpg);
   background-color: #82b3d3;
-  /* background-position: top; */
   background-repeat: no-repeat;
 }
 
@@ -529,7 +562,6 @@ body {
 .range__input {
   border: none;
   border-radius: 0 4px 4px 0;
-  /* width: 80px; */
   background: #f2f2f2;
 }
 
@@ -539,7 +571,6 @@ body {
   font-weight: 700;
   font-family: "PTSans", "Arial", sans-serif;
   color: #000;
-  /* padding: 12px 112px 12px 20px;         ???*/
 }
 
 .catalog-services__button {
@@ -623,10 +654,6 @@ body {
 
 .services-card {
   width: 340px;
-  /* min-height: 438px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; */
 }
 
 .services-card__heading {
@@ -641,9 +668,6 @@ body {
   display: inline-flex;
   color: #333;
   width: 150px;
-}
-
-.services-card__name {
 }
 
 .services-card__price {
@@ -750,7 +774,9 @@ body {
 }
 
 .newsletter__header-catalog {
+  color: #000;
 }
 
 .newsletter__text-catalog {
+  color: #333;
 }
