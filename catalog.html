@@ -40,12 +40,12 @@
 
 
       <section class="catalog-services">
+        <h1 class="catalog-services__header">Гостиницы Седоны</h1>
         <ul class="catalog-services__list">
           <li class="catalog-services__item">
             <a href="index.html" class="catalog-services__breadcrumbs catalog-services__home"></a>
           </li>
           <li class="catalog-services__item">
-            <h1 class="catalog-services__header">Гостиницы Седоны</h1>
             <a class="catalog-services__breadcrumbs">Гостиницы</a>
           </li>
         </ul>
@@ -99,18 +99,14 @@
 
             <fieldset class="catalog-services__group">
               <legend class="catalog-services__title">Стоимость, ₽:</legend>
-              <ul class="catalog-services__list">
+              <ul class="catalog-services__list catalog-services__price-list">
                 <li class="catalog-services__item">
-                  <label class="range"><input class="range__input" type="text" placeholder="0"
+                  <label class="min-range"><input class="range__input" type="text" placeholder="0"
                       name="start-price">От</label>
                 </li>
                 <li class="catalog-services__item">
-                  <label class="range"><input class="range__input" type="text" placeholder="9000"
+                  <label class="max-range"><input class="range__input" type="text" placeholder="9000"
                       name="end-price">До</label>
-                </li>
-                <li class="catalog-services__item">
-                  <label class="range"><input class="range__input" type="range" min="0" max="100" step="5" value="75"
-                      name="price-range"></label>
                 </li>
               </ul>
             </fieldset>
@@ -126,20 +122,27 @@
       </section>
 
       <section class="sorting">
-        <h2 class="visually-hidden">Результат сортировки</h2>
-        <span class="sorting__result">Найдено гостиниц: 38</span>
         <div class="sorting__container">
+          <h2 class="visually-hidden">Результат сортировки</h2>
+          <span class="sorting__result">Найдено гостиниц: 38</span>
           <select name="sorting-menu" class="select-control" aria-label="Сортировка">
             <option value="popupal-first">Сначала дешевые</option>
             <option value="cheap-first">Сначала дорогие</option>
             <option value="expensive-first">Сначала популярные</option>
           </select>
-          <a href="#" class="button sorting__button sorting__button-list"><span class="visually-hidden">Показать
-              список</span></a>
-          <a href="#" class="button sorting__button sorting__button-cards"><span class="visually-hidden">Показать
-              карточки</span></a>
-          <a href="#" class="button sorting__button sorting__button-onebyone"><span class="visually-hidden">Показать по
-              одному</span></a>
+
+          <ul class="sorting__list">
+            <li class="sorting__item"> <a href="#" class="button sorting__button sorting__button-list"><span
+                  class="visually-hidden">Показать
+                  список</span></a></li>
+            <li class="sorting__item"> <a href="#" class="button sorting__button sorting__button-cards"><span
+                  class="visually-hidden">Показать
+                  карточки</span></a></li>
+            <li class="sorting__item"> <a href="#" class="button sorting__button sorting__button-onebyone"><span
+                  class="visually-hidden">Показать по
+                  одному</span></a></li>
+          </ul>
+
         </div>
       </section>
 
@@ -150,12 +153,14 @@
               alt="Вид на ночное небо со звездами между двух скалистых гор" class="services-card__image">
             <h3 class="services-card__heading">Amara Resort & Spa</h3>
           </a>
-          <span class="services-card__name">Гостиница</span>
-          <span class="services-card__price">От 5000 ₽</span>
-          <a href="#" class="button services-card__link services-card__link--brown">подробнее</a>
-          <button class="button services-card__favorite services-card__favorite--blue">в избранное</button>
-          <img src="images/4-stars.png" alt="Четыре звезды голубого цвета" class="services-card__stars-image">
-          <span class="services-card__raiting">Рейтинг: 8,5</span>
+          <div class="services-card-container">
+            <span class="services-card__name">Гостиница</span>
+            <span class="services-card__price">От 5000 ₽</span>
+            <a href="#" class="button services-card__link services-card__link--brown">подробнее</a>
+            <button class="button services-card__favorite services-card__favorite--blue">в избранное</button>
+            <img src="images/4-stars.png" alt="Четыре звезды голубого цвета" class="services-card__stars-image">
+            <span class="services-card__raiting">Рейтинг: 8,5</span>
+          </div>
         </li>
 
         <li class="services-card">
