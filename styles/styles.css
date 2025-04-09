@@ -57,6 +57,7 @@ body {
   color: #fff;
   font-family: inherit;
   border: none;
+  cursor: pointer;
 }
 
 .page-header {
@@ -614,7 +615,6 @@ body {
   content: "";
   background-image: url(../images/range.svg);
   background-repeat: no-repeat;
-  /* background-position: center; */
   width: 287px;
   height: 20px;
   padding-top: 36px;
@@ -722,8 +722,11 @@ body {
   gap: 20px;
 }
 
-.services-card-container {
-}
+/* .services-card-container {
+  display: flex;
+  flex-wrap: wrap;
+
+} */
 
 .services-card {
   border: 1px solid #e6e6e6;
@@ -748,13 +751,17 @@ body {
   margin-left: 20px;
 }
 
+.services-card-name-container,
+.services-card-button-container,
+.services-card-raiting-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px 16px 20px;
+}
+
 .services-card__name,
 .services-card__price {
   color: #333;
-  width: 150px;
-}
-
-.services-card__price {
 }
 
 .services-card__link {
@@ -772,8 +779,6 @@ body {
   line-height: 20px;
   font-weight: 700;
   border-radius: 4px;
-  width: 140px;
-  height: 36px;
   padding: 8px 26px;
 }
 
@@ -798,14 +803,14 @@ body {
 
 .services-card__raiting {
   border-radius: 4px;
-  width: 140px;
-  height: 37px;
   background-color: #f2f2f2;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
   color: #333;
+  align-content: center;
+  padding: 7px 23px;
 }
 
 .pagination {
