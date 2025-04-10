@@ -679,7 +679,7 @@ body {
   display: flex;
   width: 1200px;
   justify-content: space-between;
-  padding: 0 40px;
+  padding: 0 70px;
   margin-top: 50px;
   margin-bottom: 40px;
 }
@@ -716,17 +716,18 @@ body {
   background-image: url(../images/onebyone.svg);
 }
 
+.services {
+  display: flex;
+  justify-content: center;
+}
+
 .services__list {
   display: grid;
   grid-template-columns: repeat(3, 340px);
   gap: 20px;
+  margin: 0 0 80px 0;
+  padding: 0;
 }
-
-/* .services-card-container {
-  display: flex;
-  flex-wrap: wrap;
-
-} */
 
 .services-card {
   border: 1px solid #e6e6e6;
@@ -814,10 +815,20 @@ body {
 }
 
 .pagination {
+  position: relative;
   display: flex;
   gap: 8px;
   list-style-type: none;
-  margin: 0;
+  padding: 0;
+  margin: 0 70px 60px 70px;
+}
+
+.pagination::after {
+  position: absolute;
+  content: "";
+  border: 1px solid #e6e6e6;
+  width: 1060px;
+  bottom: 96px;
 }
 
 .pagination__link {
