@@ -45,11 +45,11 @@ body {
 
 .page-header,
 .main-index,
+.main-catalog,
 .footer {
   width: 1200px;
   margin: 0 auto;
   background-color: #fff;
-  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 .button {
@@ -541,12 +541,6 @@ body {
 
 /* ========================================== CATALOG ========================================== */
 
-.main-catalog {
-  width: 1200px;
-  margin: 0 auto;
-  background-color: #fff;
-}
-
 .catalog-services__header {
   margin: 0 0 8px 0;
   padding: 35px 0 0 70px;
@@ -787,6 +781,16 @@ body {
   height: 49px;
 }
 
+.select-control:hover,
+.select-control:focus {
+  border: 2px solid #68a2ca;
+}
+
+.select-control:disabled {
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .sorting {
   display: flex;
 }
@@ -829,7 +833,7 @@ body {
   align-items: center;
 }
 
-.sorting__button-list {
+.sorting__button-cards {
   border-color: #000;
 }
 
