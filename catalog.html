@@ -17,10 +17,10 @@
             class="visually-hidden">Логотип сайта</span></a>
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a href="index.html" class="navigation__link">Главная</a>
+            <a class="navigation__link" href="index.html">Главная</a>
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link">О Седоне</a>
+            <a class="navigation__link" href="#">О Седоне</a>
           </li>
           <li class="navigation__item navigation__item-catalog">
             <a class="navigation__link" href="#" aria-current="page">Гостиницы</a>
@@ -29,22 +29,22 @@
 
         <ul class="navigation__list navigation-user">
           <li class="navigation__item">
-            <a href="#" class="navigation-user__link search-icon"><svg aria-hidden="true" focusable="false"
-                xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
-                <path fill="#000"
+            <a class="navigation-user__link search-icon" href="#"><svg aria-hidden="true" focusable="false"
+                xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                <path
                   d="m19.5 18-3.7-3.7a8 8 0 0 0 1.7-4.8 8 8 0 1 0-3.1 6.3l3.7 3.7 1.4-1.5Zm-10-2.5a6 6 0 0 1-6-6 6 6 0 0 1 12 0 6 6 0 0 1-6 6Z" />
               </svg>
               <span class="visually-hidden">Поиск</span></a>
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation-user__link favorite-icon"><svg aria-hidden="true" focusable="false"
-                xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
-                <path fill="#000"
+            <a class="navigation-user__link favorite-icon" href="#"><svg aria-hidden="true" focusable="false"
+                xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                <path
                   d="M9.9 19a1 1 0 0 1-.8-.4l-7-7.9A5.4 5.4 0 0 1 6.5 2C7.8 2 9 2.5 10 3.3a5.5 5.5 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5 6.1 6.9 6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4a3.7 3.7 0 0 0-2.7-1.3 3.3 3.3 0 0 0-3.3 3.3c-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" />
               </svg><span class="visually-hidden">Избранное</span></a>
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation-user__link navigation-user__link-wanna-here button">хочу сюда!</a>
+            <a class="button navigation-user__link navigation-user__link-wanna-here" href="#">хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -55,14 +55,15 @@
         <h1 class="catalog-services__header">Гостиницы Седоны</h1>
         <ul class="catalog-services-breadcrumbs__list">
           <li class="catalog-services-breadcrumbs__item">
-            <a href="index.html" class="catalog-services-breadcrumbs__link catalog-services-breadcrumbs__home"><svg
-                aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="13" height="13">
+            <a class="catalog-services-breadcrumbs__link catalog-services-breadcrumbs__home" href="index.html">
+              <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="13" height="13">
                 <path d="m6.5.5-6 5.8v6.2h12V6.3L6.5.5Zm5 11h-10V6.7l5-4.8 5 4.8v4.8Z" />
                 <path d="M4.5 10.5h1V8h2v2.5h1V7h-4v3.5Z" />
-              </svg></a>
+              </svg>
+            </a>
           </li>
           <li class="catalog-services-breadcrumbs__item">
-            <a class="catalog-services-breadcrumbs__link">Гостиницы</a>
+            <span class="catalog-services-breadcrumbs__link">Гостиницы</span>
           </li>
         </ul>
 
@@ -75,21 +76,21 @@
               <ul class="catalog-services__list">
                 <li class="catalog-services__item">
                   <label class="control">
-                    <input type="checkbox" class="control__input visually-hidden" name="pool" checked />
+                    <input class="control__input visually-hidden" type="checkbox" name="pool" checked />
                     <span class="control__mark"></span>
                     <span class="control__label">Бассейн</span>
                   </label>
                 </li>
                 <li class="catalog-services__item">
                   <label class="control">
-                    <input type="checkbox" class="control__input visually-hidden" name="parking" checked />
+                    <input class="control__input visually-hidden" type="checkbox" name="parking" checked />
                     <span class="control__mark"></span>
                     <span class="control__label">Парковка</span>
                   </label>
                 </li>
                 <li class="catalog-services__item">
                   <label class="control">
-                    <input type="checkbox" class="control__input visually-hidden" name="wi-fi" />
+                    <input class="control__input visually-hidden" type="checkbox" name="wi-fi" />
                     <span class="control__mark"></span>
                     <span class="control__label">Wi-Fi</span>
                   </label>
@@ -102,7 +103,7 @@
               <ul class="catalog-services__list">
                 <li class="catalog-services__item">
                   <label class="control">
-                    <input type="radio" class="control__input visually-hidden" name="type-of-housing" value="hotel"
+                    <input class="control__input visually-hidden" type="radio" name="type-of-housing" value="hotel"
                       checked />
                     <span class="control__mark"></span>
                     <span class="control__label">Гостиница</span>
@@ -110,14 +111,14 @@
                 </li>
                 <li class="catalog-services__item">
                   <label class="control">
-                    <input type="radio" class="control__input visually-hidden" name="type-of-housing" value="hostel" />
+                    <input class="control__input visually-hidden" type="radio" name="type-of-housing" value="hostel" />
                     <span class="control__mark"></span>
                     <span class="control__label">Мотель</span>
                   </label>
                 </li>
                 <li class="catalog-services__item">
                   <label class="control">
-                    <input type="radio" class="control__input visually-hidden" name="type-of-housing"
+                    <input class="control__input visually-hidden" type="radio" name="type-of-housing"
                       value="apartments" />
                     <span class="control__mark"></span>
                     <span class="control__label">Апартаменты</span>
@@ -165,7 +166,7 @@
         <div class="sorting__container">
           <h2 class="visually-hidden">Результат сортировки</h2>
           <span class="sorting__result">Найдено гостиниц: 38</span>
-          <select name="sorting-menu" class="select-control" aria-label="Сортировка">
+          <select class="select-control" name="sorting-menu" aria-label="Сортировка">
             <option value="popular-first">Сначала дешевые</option>
             <option value="cheap-first">Сначала дорогие</option>
             <option value="expensive-first">Сначала популярные</option>
@@ -173,44 +174,41 @@
 
           <ul class="sorting__list">
             <li class="sorting__item">
-              <a href="catalog.html?view=card" class="button sorting__button sorting__button-cards" method="get"><svg
-                  aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="14"
-                  fill="none" viewBox="0 0 16 14">
-                  <g fill="#000" clip-path="url(#a)">
-                    <path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" />
+              <a class="button sorting__button sorting__button-cards" href="catalog.html?view=card" method="get"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="16" height="14" aria-hidden="true" viewBox="0 0 16 14">
+                  <g clip-path="url(#a)">
+                    <path d="M4 0H0v6h4V0Zm12 0h-4v6h4V0Zm-6 0H6v6h4V0ZM4 8H0v6h4V8Zm12 0h-4v6h4V8Zm-6 0H6v6h4V8Z" />
                   </g>
                   <defs>
                     <clipPath id="a">
-                      <path fill="#fff" d="M0 0h16v14H0z" />
+                      <path d="M0 0h16v14H0z" />
                     </clipPath>
                   </defs>
-                </svg><span class="visually-hidden"> Показать карточками</span></a>
+                </svg><span class="visually-hidden">Показать карточками</span></a>
             </li>
             <li class="sorting__item">
-              <a href="catalog.html?view=tile" class="button sorting__button sorting__button-onebyone" method="get"><svg
-                  aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="14"
-                  fill="none" viewBox="0 0 16 14">
-                  <g fill="#000" clip-path="url(#a)">
+              <a class="button sorting__button sorting__button-onebyone" href="catalog.html?view=tile" method="get"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="16" height="14" aria-hidden="true" viewBox="0 0 16 14">
+                  <g clip-path="url(#a)">
                     <path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" />
                   </g>
                   <defs>
                     <clipPath id="a">
-                      <path fill="#fff" d="M0 0h16v14H0z" />
+                      <path d="M0 0h16v14H0z" />
                     </clipPath>
                   </defs>
                 </svg><span class="visually-hidden">Показать по одному</span></a>
             </li>
             <li class="sorting__item">
-              <a href="catalog.html?view=list" class="button sorting__button sorting__button-list" method="get"><svg
-                  aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="14"
-                  fill="none" viewBox="0 0 16 14">
-                  <g fill="#000" clip-path="url(#a)">
+              <a class="button sorting__button sorting__button-list" href="catalog.html?view=list" method="get"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="16" height="14" aria-hidden="true" viewBox="0 0 16 14">
+                  <g clip-path="url(#a)">
                     <path
-                      d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z" />
+                      d="M2 0H0v2h2V0Zm14 0H4v2h12V0ZM2 4H0v2h2V4Zm14 0H4v2h12V4ZM2 8H0v2h2V8Zm14 0H4v2h12V8ZM2 12H0v2h2v-2Zm14 0H4v2h12v-2Z" />
                   </g>
                   <defs>
                     <clipPath id="a">
-                      <path fill="#fff" d="M0 0h16v14H0z" />
+                      <path d="M0 0h16v14H0z" />
                     </clipPath>
                   </defs>
                 </svg><span class="visually-hidden">Показать списком</span></a>
@@ -222,9 +220,9 @@
       <section class="services">
         <ul class="services__list">
           <li class="services-card">
-            <a href="#" class="services-card__link-image">
-              <img src="images/Amara_Resort_&_Spa.jpg" width="300" height="212"
-                alt="Вид на ночное небо со звездами между двух скалистых гор" class="services-card__image" />
+            <a class="services-card__link-image" href="#">
+              <img class="services-card__image" src="images/Amara_Resort_&_Spa.jpg" width="300" height="212"
+                alt="Вид на ночное небо со звездами между двух скалистых гор" />
               <h3 class="services-card__heading">Amara Resort & Spa</h3>
             </a>
             <div class="services-card-name-container">
@@ -233,23 +231,23 @@
             </div>
 
             <div class="services-card-button-container">
-              <a href="#" class="button services-card__link services-card__link--primary">подробнее</a>
+              <a class="button services-card__link services-card__link--primary" href="#">подробнее</a>
               <button class="button services-card__favorite services-card__button-favorite--secondary" type="button">
                 в избранное
               </button>
             </div>
 
             <div class="services-card-rating-container">
-              <img src="images/4-stars.png" alt="Четыре звезды голубого цвета" class="services-card__stars-image" />
+              <img class="services-card__stars-image" src="images/4-stars.png" alt="Четыре звезды голубого цвета"
+                width="140" height="37" />
               <span class="services-card__rating">Рейтинг: 8,5</span>
             </div>
           </li>
 
           <li class="services-card">
-            <a href="#" class="services-card__link-image">
-              <img src="images/Villas_at_Poco_Diablo.jpg" width="300" height="212"
-                alt="Вид из далека, вначале изображено множество деревьев в тени, а вдали изображена гора на которую падают лучи солнца. На небе тучи с ели заметной радугой"
-                class="services-card__image" />
+            <a class="services-card__link-image" href="#">
+              <img class="services-card__image" src="images/Villas_at_Poco_Diablo.jpg" width="300" height="212"
+                alt="Вид из далека, вначале изображено множество деревьев в тени, а вдали изображена гора на которую падают лучи солнца. На небе тучи с ели заметной радугой" />
               <h3 class="services-card__heading">Villas at Poco Diablo</h3>
             </a>
 
@@ -259,23 +257,23 @@
             </div>
 
             <div class="services-card-button-container">
-              <a href="#" class="button services-card__link services-card__link--primary">подробнее</a>
+              <a class="button services-card__link services-card__link--primary" href="#">подробнее</a>
               <button class="button services-card__favorite services-card__button-favorite--selected" type="button">
                 в избранном
               </button>
             </div>
 
             <div class="services-card-rating-container">
-              <img src="images/4-stars.png" alt="Четыре звезды голубого цвета" class="services-card__stars-image" />
+              <img class="services-card__stars-image" src="images/4-stars.png" alt="Четыре звезды голубого цвета"
+                width="140" height="37" />
               <span class="services-card__rating">Рейтинг: 9,2</span>
             </div>
           </li>
 
           <li class="services-card">
-            <a href="#" class="services-card__link-image">
-              <img src="images/Desert_Quail_Inn.jpg" width="300" height="212"
-                alt="Вид из далека, вначале изображено множество деревьев, а сразу за ними глиняная гора. Небо голубое с небольшим количество туч позади"
-                class="services-card__image" />
+            <a class="services-card__link-image" href="#">
+              <img class="services-card__image" src="images/Desert_Quail_Inn.jpg" width="300" height="212"
+                alt="Вид из далека, вначале изображено множество деревьев, а сразу за ними глиняная гора. Небо голубое с небольшим количество туч позади" />
               <h3 class="services-card__heading">Desert Quail Inn</h3>
             </a>
 
@@ -285,23 +283,23 @@
             </div>
 
             <div class="services-card-button-container">
-              <a href="#" class="button services-card__link services-card__link--primary">подробнее</a>
+              <a class="button services-card__link services-card__link--primary" href="#">подробнее</a>
               <button class="button services-card__favorite services-card__button-favorite--secondary" type="button">
                 в избранное
               </button>
             </div>
 
             <div class="services-card-rating-container">
-              <img src="images/3-stars.png" alt="Три звезды голубого цвета" class="services-card__stars-image" />
+              <img class="services-card__stars-image" src="images/3-stars.png" alt="Три звезды голубого цвета"
+                width="140" height="37" />
               <span class="services-card__rating">Рейтинг: 6,9</span>
             </div>
           </li>
 
           <li class="services-card">
-            <a href="#" class="services-card__link-image">
-              <img src="images/GreenTree_Inn.jpg" width="300" height="212"
-                alt="Гора на фоне звездного ночного неба на которую падает слева свет от солнца"
-                class="services-card__image" />
+            <a class="services-card__link-image" href="#">
+              <img class="services-card__image" src="images/GreenTree_Inn.jpg" width="300" height="212"
+                alt="Гора на фоне звездного ночного неба на которую падает слева свет от солнца" />
               <h3 class="services-card__heading">GreenTree Inn</h3>
             </a>
 
@@ -311,14 +309,15 @@
             </div>
 
             <div class="services-card-button-container">
-              <a href="#" class="button services-card__link services-card__link--primary">подробнее</a>
+              <a class="button services-card__link services-card__link--primary" href="#">подробнее</a>
               <button class="button services-card__favorite services-card__button-favorite--secondary" type="button">
                 в избранное
               </button>
             </div>
 
             <div class="services-card-rating-container">
-              <img src="images/2-stars.png" alt="Две звезды голубого цвета" class="services-card__stars-image" />
+              <img class="services-card__stars-image" src="images/2-stars.png" alt="Две звезды голубого цвета"
+                width="140" height="37" />
               <span class="services-card__rating">Рейтинг: 5,0</span>
             </div>
           </li>
@@ -327,22 +326,22 @@
 
       <ul class="pagination">
         <li class="pagination__item">
-          <a class="pagination__link pagination__link--active">1</a>
+          <span class="pagination__link pagination__link--active">1</span>
         </li>
         <li class="pagination__item">
-          <a href="#" class="pagination__link">2</a>
+          <a class="pagination__link" href="#">2</a>
         </li>
         <li class="pagination__item">
-          <a href="#" class="pagination__link">3</a>
+          <a class="pagination__link" href="#">3</a>
         </li>
         <li class="pagination__item">
-          <a href="#" class="pagination__link">4</a>
+          <a class="pagination__link" href="#">4</a>
         </li>
         <li class="pagination__item">
           <span class="pagination__link-dots">...</span>
         </li>
         <li class="pagination__item">
-          <a href="#" class="pagination__link">10</a>
+          <a class="pagination__link" href="#">10</a>
         </li>
       </ul>
     </main>
@@ -368,7 +367,7 @@
           <h2 class="visually-hidden">Социальные сети</h2>
           <ul class="footer__list">
             <li class="footer__item">
-              <a href="https://vk.com/htmlacademy" class="footer__link-socials link-socials__vk"><svg role="img"
+              <a class="footer__link-socials link-socials__vk" href="https://vk.com/htmlacademy"><svg role="img"
                   aria-label="Логотип сайта Вконтакте" xmlns="http://www.w3.org/2000/svg" width="24" height="14"
                   viewBox="0 0 24 14">
                   <path fill-rule="evenodd"
@@ -379,7 +378,7 @@
               </a>
             </li>
             <li class="footer__item">
-              <a href="https://t.me/htmlacademy" class="footer__link-socials link-socials__telegram"><svg role="img"
+              <a class="footer__link-socials link-socials__telegram" href="https://t.me/htmlacademy"><svg role="img"
                   aria-label="Логотип программы Телеграм" xmlns="http://www.w3.org/2000/svg" width="18" height="16"
                   viewBox="0 0 18 16">
                   <path
@@ -389,7 +388,7 @@
               </a>
             </li>
             <li class="footer__item">
-              <a href="https://www.youtube.com/user/htmlacademyru" class="footer__link-socials link-socials__youtube">
+              <a class="footer__link-socials link-socials__youtube" href="https://www.youtube.com/user/htmlacademyru">
                 <svg role="img" aria-label="Логотип сайта Ютуб" xmlns="http://www.w3.org/2000/svg" width="22"
                   height="17" viewBox="0 0 22 17">
                   <path
@@ -403,12 +402,12 @@
 
         <section class="footer__contacts">
           <h2 class="visually-hidden">Контакты</h2>
-          <a href="tel:+7(812)812-12-12" class="footer__phone">+7 (812) 812-12-12</a>
+          <a class="footer__phone" href="tel:+7(812)812-12-12">+7 (812) 812-12-12</a>
         </section>
 
         <a href="https://htmlacademy.ru/" class="footer__about-link"><svg role="img"
             aria-label="Логотип сайта разработчика HTML Academy" xmlns="http://www.w3.org/2000/svg" width="115"
-            height="34" fill="none" viewBox="0 0 115 34">
+            height="34" viewBox="0 0 115 34">
             <path
               d="M0 13.7v2.6h2.5v-2.6H0ZM11.6 5.3C10 5.3 8.8 6 8 7h-.1V.8h-2v15.5h2V11c0-2 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2v-6c.1-3-1.8-5-4.5-5ZM26.6 5.6h-4.8V2h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1V7.5h4.8v-2ZM41.1 5.4c-1.6 0-2.9.8-3.5 2.1h-.1a3.7 3.7 0 0 0-3.4-2c-1.4 0-2.5.7-3.1 1.7h-.1V5.6H29v10.6h2v-5.4c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2V9.7c.1-2.5-1.4-4.3-3.9-4.3ZM47.8 13.5c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1V.7h-2v12.7ZM28.9 20.5a4.9 4.9 0 0 0-3.9-1.8c-3.1 0-5.4 2.3-5.4 5.6S21.9 30 25 30c1.8 0 3-.8 3.8-1.9h.1v1.6h2V19h-2v1.5ZM25.3 28a3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6s3.6 1.6 3.6 3.6-1.4 3.6-3.6 3.6ZM44.2 22.8c-.5-2.4-2.6-4-5.4-4a5.4 5.4 0 0 0-5.6 5.5c0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1a3.4 3.4 0 0 1-3.3 2.3 3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6 1.6 0 2.8 1 3.3 2.2h2.1v-.2ZM55.1 20.5a4.9 4.9 0 0 0-3.9-1.8c-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V19h-2v1.5ZM51.5 28a3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6s3.6 1.6 3.6 3.6-1.5 3.6-3.6 3.6ZM68.7 20.6a5 5 0 0 0-3.9-1.9c-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2V14.2h-2v6.4ZM65.1 28a3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6s3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6ZM78.3 18.7a5.4 5.4 0 0 0-5.5 5.6c0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3Zm0 2c1.7 0 3 1 3.3 2.5h-6.5a3.2 3.2 0 0 1 3.2-2.6ZM98.2 18.7a4 4 0 0 0-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8V19h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2V24c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4ZM109.4 27.8l-3.6-8.9h-2.2l4.8 11.6c-.3 1-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 9Z" />
           </svg>

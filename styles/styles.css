@@ -77,7 +77,7 @@ img {
 
 .navigation__list {
   position: relative;
-  margin: 0 0 0 150px;
+  margin: 0 0 0 129px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -122,6 +122,7 @@ img {
 .navigation-user {
   position: relative;
   display: flex;
+  justify-content: flex-end;
   width: 280px;
   min-height: 64px;
   margin-left: auto;
@@ -159,7 +160,7 @@ img {
   width: 20px;
   height: 20px;
   top: 12px;
-  left: 105px;
+  left: 116px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -277,8 +278,8 @@ img {
   right: 52px;
   top: 64px;
   display: flex;
-  width: 46px;
-  height: 46px;
+  width: 52px;
+  height: 52px;
   background-color: #f2f2f2;
   border-radius: 50%;
 }
@@ -288,9 +289,9 @@ img {
   position: absolute;
   content: "";
   top: 50%;
-  left: 16px;
+  left: 17px;
   height: 2px;
-  width: 15px;
+  width: 18px;
   background-color: #000000;
   transform: rotate(45deg);
 }
@@ -316,7 +317,7 @@ img {
 .modal__form {
   display: flex;
   flex-direction: column;
-  row-gap: 48px;
+  row-gap: 24px;
   margin: 64px 70px 0;
   font-size: 20px;
   line-height: 24px;
@@ -373,7 +374,7 @@ img {
   font-size: 16px;
   line-height: 21px;
   font-weight: 400;
-  margin-left: 158px;
+  margin: 4px 0 0 157px;
 }
 
 .modal__input--error {
@@ -476,7 +477,7 @@ img {
 .tooltip {
   position: relative;
   height: 26px;
-  left: 10px;
+  left: 12px;
 }
 
 .tooltip-toggle {
@@ -486,7 +487,7 @@ img {
   border: none;
   background-color: transparent;
   padding: 0;
-  margin: 0;
+  margin: 0 9px 0 0;
   display: block;
 }
 
@@ -494,16 +495,17 @@ img {
   display: none;
   position: absolute;
   border-radius: 10px;
-  width: 220px;
+  width: 216px;
+  min-height: 105px;
   box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.3);
   background-color: #333333;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   color: #ffffff;
-  padding: 15px 18px 18px 22px;
-  top: 50px;
-  left: -117px;
+  padding: 20px 18px 18px 21px;
+  top: 40px;
+  left: -114px;
 }
 
 .tooltip-text::before {
@@ -513,9 +515,9 @@ img {
   height: 20px;
   background-color: #333333;
   content: "";
-  top: -9px;
+  top: -5px;
   left: 0;
-  right: 0;
+  right: 2px;
   margin-left: auto;
   margin-right: auto;
   transform: rotate(45deg);
@@ -542,7 +544,7 @@ img {
   line-height: 24px;
   font-weight: 700;
   padding: 0;
-  margin-bottom: 64px;
+  margin: 24px 0 64px;
 }
 
 .modal__button:hover,
@@ -655,7 +657,7 @@ img {
   min-height: 385px;
   background-image: url("../images/house.svg");
   background-repeat: no-repeat;
-  background-position: 162px 70px;
+  background-position: 164px 80px;
 }
 
 .recommendations__item:nth-child(2) {
@@ -685,7 +687,7 @@ img {
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 80px 0 30px;
+  margin: 102px 0 30px;
 }
 
 .recommendations__text {
@@ -781,12 +783,13 @@ img {
   line-height: 26px;
   color: #ffffff;
   margin: 0 auto;
-  margin-bottom: 54px;
+  margin-bottom: 56px;
 }
 
 .newsletter__form {
   display: flex;
   justify-content: center;
+  margin-bottom: 6px;
 }
 
 .newsletter input {
@@ -846,9 +849,9 @@ img {
 
 .footer__container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  margin: 40px 0 30px;
+  margin: 46px 70px 30px;
 }
 
 .footer__list {
