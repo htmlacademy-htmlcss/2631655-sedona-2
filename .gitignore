@@ -8,3 +8,8 @@
 node_modules/
 npm-debug.*
 Thumbs.db
+
+.stylelintrc
+.linthtmlrc
+package-lock.json
+package.json

@@ -15,7 +15,7 @@
 
         <a class="page-header__logo" href="index.html" aria-current="page"><img src="images/logo.svg" width="140"
             height="70"
-            alt="Логотип: изображен в виде перевернутой пирамиды внутри которой изображены горы, а нижняя часть пирамиды изображена ввиде моста"><span
+            alt="Логотип: изображен в виде перевернутой пирамиды внутри которой изображены горы, а нижняя часть пирамиды изображена в виде моста"><span
             class="visually-hidden">Логотип сайта</span></a>
         <ul class="navigation__list">
           <li class="navigation__item navigation__item-main"><a href="#" class="navigation__link"
@@ -26,7 +26,7 @@
 
         <ul class="navigation__list navigation-user">
           <li class="navigation__item"><a href="#" class="navigation-user__link search-icon"><svg role="img"
-                aria-label='Иконка поиска ввиде лупы' aria-hidden="true" focusable="false"
+                aria-label='Иконка поиска в виде лупы' aria-hidden="true" focusable="false"
                 xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="" viewBox="0 0 20 20">
                 <path fill=""
                   d="m19.5 18-3.7-3.7a8 8 0 0 0 1.7-4.8 8 8 0 1 0-3.1 6.3l3.7 3.7 1.4-1.5Zm-10-2.5a6 6 0 0 1-6-6 6 6 0 0 1 12 0 6 6 0 0 1-6 6Z" />
@@ -54,7 +54,7 @@
             alt="Welcome to the gorgeous Sedona Because the Grand Canyon sucks!">
         </section>
 
-        <h2 class="visually-hidden">Преймущества</h2>
+        <h2 class="visually-hidden">Преимущества</h2>
         <h3 class="advantages__main-header">cедона — небольшой городок в аризоне, заслуживающий большего!</h3>
         <p class="advantages__main-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
 
@@ -98,23 +98,23 @@
 
 
 
-      <section class="recomendations">
-        <h2 class="recomendations__header">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
-        <p class="recomendations__main-text">Опытный персонал и качественное обслуживание!</p>
+      <section class="recommendations">
+        <h2 class="recommendations__header">приезжайте в седону отдохнуть в комфорте и уюте!</h2>
+        <p class="recommendations__main-text">Опытный персонал и качественное обслуживание!</p>
 
 
-        <ul class="recomendations__list">
-          <li class="recomendations__item">
-            <span class="recomendations__description">жильё</span>
-            <p class="recomendations__text">Рекомендуем пожить в настоящем мотеле,<br>всё как в кино!</p>
+        <ul class="recommendations__list">
+          <li class="recommendations__item">
+            <span class="recommendations__description">жильё</span>
+            <p class="recommendations__text">Рекомендуем пожить в&nbsp;настоящем мотеле,<br>всё как в кино!</p>
           </li>
-          <li class="recomendations__item">
-            <span class="recomendations__description">еда</span>
-            <p class="recomendations__text">Всегда заказывайте топовый фирменный бургер,<br>вы не разочаруетесь!</p>
+          <li class="recommendations__item">
+            <span class="recommendations__description">еда</span>
+            <p class="recommendations__text">Всегда заказывайте<br>топовый фирменный бургер,<br>вы не разочаруетесь!</p>
           </li>
-          <li class="recomendations__item">
-            <span class="recomendations__description">сувениры</span>
-            <p class="recomendations__text">Не только китайского,<br>но и настоящего местного производства!</p>
+          <li class="recommendations__item">
+            <span class="recommendations__description">сувениры</span>
+            <p class="recommendations__text">Не только китайского,<br>но и настоящего местного производства!</p>
           </li>
         </ul>
       </section>
@@ -138,7 +138,8 @@
         <span class="newsletter__header">подпишитесь на рассылку</span>
         <p class="newsletter__text">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter__form" action="https://echo.htmlacademy.ru/" method="post">
-          <input type="email" placeholder="Ваш e-mail" name="newsletter-date" required><button
+      <label class="visually-hidden" for="newsletter-email">Email</label>
+          <input type="email" placeholder="Ваш e-mail" name="newsletter-date" id="newsletter-email" required><button
             class="newsletter__button button" type="submit">подписаться</button>
         </form>
       </section>
@@ -200,57 +201,57 @@
     </footer>
 
     <div class="modal__container">
-        <div class="modal modal__search-hotel">
-          <h2 class="modal__title">поиск гостиницы в седоне</h2>
-          <button class="button modal__close-button"></button>
-          <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
+      <div class="modal modal__search-hotel">
+        <h2 class="modal__title">поиск гостиницы в седоне</h2>
+        <button class="button modal__close-button"></button>
+        <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
 
-            <div class="modal__date-wrapper">
-              <label class="modal__label modal__date-label" for="date-check-in">Дата Заезда:</label>
-              <input type="text" class="modal__input modal__input-date" placeholder="Укажите дату" value="27 апреля 2020"
-                name="date-check-in" id="date-check-in" required>
-              <span class="modal__input-text modal__input--error">Мы не можем отправить вас в прошлое.</span>
-            </div>
+          <div class="modal__date-wrapper">
+            <label class="modal__label modal__date-label" for="date-check-in">Дата Заезда:</label>
+            <input type="text" class="modal__input modal__input-date" placeholder="Укажите дату" value="27 апреля 2020"
+              name="date-check-in" id="date-check-in" required>
+            <span class="modal__input-text modal__input--error">Мы не можем отправить вас в прошлое.</span>
+          </div>
 
-            <div class="modal__date-wrapper">
-              <label class="modal__label modal__date-label" for="date-check-out">Дата Выезда:</label>
-              <input type="text" class="modal__input modal__input-date" placeholder="Укажите дату" value="1 сентября 2021"
-                name="date-check-out" id="date-check-out" required>
-              <span class="modal__input-text">На эти даты есть свободные номера. Пока есть.</span>
-            </div>
+          <div class="modal__date-wrapper">
+            <label class="modal__label modal__date-label" for="date-check-out">Дата Выезда:</label>
+            <input type="text" class="modal__input modal__input-date" placeholder="Укажите дату" value="1 сентября 2021"
+              name="date-check-out" id="date-check-out" required>
+            <span class="modal__input-text">На эти даты есть свободные номера. Пока есть.</span>
+          </div>
 
-            <div class="modal__human-counts-wrapper">
-              <div class="modal__adults-wrapper">
-                <label class="modal__label" for="adults">Взрослые:</label>
-                <div class="modal__button-wrapper">
-                  <button class="modal__button-minus" type="button"></button>
-                </div>
-                <input class="modal__input" type="number" name="adults" id="adults" placeholder="1" value="2" required>
-                <div class="modal__button-wrapper">
-                  <button class="modal__button-plus" type="button"></button>
-                </div>
+          <div class="modal__human-counts-wrapper">
+            <div class="modal__adults-wrapper">
+              <label class="modal__label" for="adults">Взрослые:</label>
+              <div class="modal__button-wrapper">
+                <button class="modal__button-minus" type="button"></button>
               </div>
-
-              <div class="modal__kids-wrapper">
-                <label class="modal__label modal__kids">Дети:</label>
-                <span class="tooltip">
-                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-kids"></button>
-                  <span class="tooltip-text" role="tooltip" id="tooltip-label-kids">Укажите количество детей, которые
-                    будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
-                </span>
-
-                <div class="modal__button-wrapper">
-                  <button class="modal__button-minus" type="button"></button>
-                </div>
-                <input type="number" class="modal__input" name="kids" placeholder="0" value="2" required>
-                <div class="modal__button-wrapper">
-                  <button class="modal__button-plus" type="button"></button>
-                </div>
+              <input class="modal__input" type="number" name="adults" id="adults" placeholder="1" value="2" required>
+              <div class="modal__button-wrapper">
+                <button class="modal__button-plus" type="button"></button>
               </div>
             </div>
 
-            <button class="button modal__button" type="submit">найти</button>
-          </form>
+            <div class="modal__kids-wrapper">
+              <label class="modal__label modal__kids">Дети:</label>
+              <span class="tooltip">
+                <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-kids"></button>
+                <span class="tooltip-text" role="tooltip" id="tooltip-label-kids">Укажите количество детей, которые
+                  будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+              </span>
+
+              <div class="modal__button-wrapper">
+                <button class="modal__button-minus" type="button"></button>
+              </div>
+              <input type="number" class="modal__input" name="kids" placeholder="0" value="2" required>
+              <div class="modal__button-wrapper">
+                <button class="modal__button-plus" type="button"></button>
+              </div>
+            </div>
+          </div>
+
+          <button class="button modal__button" type="submit">найти</button>
+        </form>
       </div>
 
   </body>
