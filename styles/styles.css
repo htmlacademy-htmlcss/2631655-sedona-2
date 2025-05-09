@@ -237,7 +237,7 @@ img {
   text-align: center;
 }
 
-/* ================================================================================================================ */
+/* =========================================================================================================== */
 
 .modal__container {
   display: none;
@@ -967,10 +967,15 @@ img {
   margin-bottom: 40px;
 }
 
+.catalog-services__wrapper {
+  display: flex;
+  gap: 70px;
+}
+
 .catalog-services__group {
   border: none;
   padding: 0;
-  margin: 0;
+  margin: 0 0 0 2px;
 }
 
 .catalog-services__list,
@@ -992,13 +997,20 @@ img {
   font-weight: 700;
   color: #ffffff;
   padding: 0;
-  margin-bottom: 32px;
+  margin: 0 0 32px -1px;
 }
 
 .catalog-services__item,
 .catalog-services-breadcrumbs__item {
-  line-height: 23px;
   color: #ffffff;
+}
+
+.catalog-services-breadcrumbs__item {
+  font-size: 16px;
+}
+
+.catalog-services__item {
+  line-height: 23px;
 }
 
 .control {
@@ -1009,12 +1021,12 @@ img {
 
 .control__mark {
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 21px;
+  height: 21px;
   background-color: #ffffff;
   border-radius: 4px;
-  left: 0;
-  top: 2px;
+  left: -2px;
+  top: 1px;
 }
 
 .control:hover .control__mark {
@@ -1110,7 +1122,7 @@ img {
 .catalog-services__price-list {
   position: relative;
   display: flex;
-  margin: 0 0 20px;
+  margin: 0 0 24px;
 }
 
 .range__input {
@@ -1138,16 +1150,16 @@ img {
   position: absolute;
   color: rgba(0, 0, 0, 0.3);
   content: "от";
-  top: 12px;
-  left: 108px;
+  top: 13px;
+  left: 107px;
 }
 
 .max-range::after {
   position: absolute;
   color: rgba(0, 0, 0, 0.3);
   content: "до";
-  top: 12px;
-  right: 18px;
+  top: 13px;
+  right: 20px;
 }
 
 .min-range input {
@@ -1263,16 +1275,16 @@ img {
 .select-control {
   font: inherit;
   color: #333333;
-  background-color: #ffffff;
+  background-color: transparent;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
-  padding: 14px 20px;
+  padding: 12px 18px;
   width: 292px;
   cursor: pointer;
   appearance: none;
   background-image: url("../images/arrow_down.svg");
   background-repeat: no-repeat;
-  background-position: top 22px right 20px;
+  background-position: top 18px right 18px;
 }
 
 .select-control:hover {
@@ -1319,13 +1331,14 @@ img {
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
+  margin-right: 132px;
 }
 
 .sorting__button {
   border: 2px solid #e5e5e5;
   border-radius: 4px;
-  width: 48px;
-  height: 48px;
+  width: 44px;
+  height: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1358,21 +1371,22 @@ img {
 }
 
 .services-card {
-  border: 1px solid #e6e6e6;
+  outline: 1px solid #e6e6e6;
   border-radius: 4px;
   padding-top: 20px;
   width: 340px;
   list-style-type: none;
   text-align: center;
+  min-height: 418px;
 }
 
 .services-card__heading {
+  margin: 12px 0 16px 20px;
   text-align-last: left;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
   color: #000000;
-  margin-left: 20px;
 }
 
 .services-card-name-container,
@@ -1465,7 +1479,7 @@ img {
   text-align: center;
   color: #333333;
   align-content: center;
-  padding: 7px 23px;
+  padding: 0 22px;
 }
 
 .pagination {
@@ -1491,7 +1505,7 @@ img {
   border-radius: 4px;
   min-width: 60px;
   height: 60px;
-  padding: 13px 0;
+  padding: 11px 0;
   box-sizing: border-box;
   background-color: #82b3d3;
   color: #ffffff;

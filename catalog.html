@@ -71,96 +71,103 @@
 
         <form class="catalog-services__filter" action="https://echo.htmlacademy.ru/" method="get">
           <div class="catalog__main-container">
-            <fieldset class="catalog-services__group">
-              <legend class="catalog-services__title">Инфраструктура:</legend>
-              <ul class="catalog-services__list">
-                <li class="catalog-services__item">
-                  <label class="control">
-                    <input class="control__input visually-hidden" type="checkbox" name="pool" checked />
-                    <span class="control__mark"></span>
-                    <span class="control__label">Бассейн</span>
-                  </label>
-                </li>
-                <li class="catalog-services__item">
-                  <label class="control">
-                    <input class="control__input visually-hidden" type="checkbox" name="parking" checked />
-                    <span class="control__mark"></span>
-                    <span class="control__label">Парковка</span>
-                  </label>
-                </li>
-                <li class="catalog-services__item">
-                  <label class="control">
-                    <input class="control__input visually-hidden" type="checkbox" name="wi-fi" />
-                    <span class="control__mark"></span>
-                    <span class="control__label">Wi-Fi</span>
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
 
-            <fieldset class="catalog-services__group">
-              <legend class="catalog-services__title">Тип жилья:</legend>
-              <ul class="catalog-services__list">
-                <li class="catalog-services__item">
-                  <label class="control">
-                    <input class="control__input visually-hidden" type="radio" name="type-of-housing" value="hotel"
-                      checked />
-                    <span class="control__mark"></span>
-                    <span class="control__label">Гостиница</span>
-                  </label>
-                </li>
-                <li class="catalog-services__item">
-                  <label class="control">
-                    <input class="control__input visually-hidden" type="radio" name="type-of-housing" value="hostel" />
-                    <span class="control__mark"></span>
-                    <span class="control__label">Мотель</span>
-                  </label>
-                </li>
-                <li class="catalog-services__item">
-                  <label class="control">
-                    <input class="control__input visually-hidden" type="radio" name="type-of-housing"
-                      value="apartments" />
-                    <span class="control__mark"></span>
-                    <span class="control__label">Апартаменты</span>
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
+            <div class="catalog-services__wrapper">
+              <fieldset class="catalog-services__group">
+                <legend class="catalog-services__title">Инфраструктура:</legend>
+                <ul class="catalog-services__list">
+                  <li class="catalog-services__item">
+                    <label class="control">
+                      <input class="control__input visually-hidden" type="checkbox" name="pool" checked />
+                      <span class="control__mark"></span>
+                      <span class="control__label">Бассейн</span>
+                    </label>
+                  </li>
+                  <li class="catalog-services__item">
+                    <label class="control">
+                      <input class="control__input visually-hidden" type="checkbox" name="parking" checked />
+                      <span class="control__mark"></span>
+                      <span class="control__label">Парковка</span>
+                    </label>
+                  </li>
+                  <li class="catalog-services__item">
+                    <label class="control">
+                      <input class="control__input visually-hidden" type="checkbox" name="wi-fi" />
+                      <span class="control__mark"></span>
+                      <span class="control__label">Wi-Fi</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
 
-            <fieldset class="catalog-services__group">
-              <legend class="catalog-services__title">Стоимость, ₽:</legend>
-              <ul class="catalog-services__list catalog-services__price-list">
-                <li class="catalog-services__item">
-                  <label class="min-range"><input class="range__input" type="number" placeholder="0"
-                      name="start-price" /></label>
-                </li>
-                <li class="catalog-services__item">
-                  <label class="max-range"><input class="range__input" type="number" placeholder="9000"
-                      name="end-price" /></label>
-                </li>
-              </ul>
-              <div class="catalog-services__range">
-                <div class="catalog-services__range-scale">
-                  <div class="catalog-services__range-bar" style="left: 0; width: 227px">
-                    <button class="catalog-services__range-toggle catalog-services__range-toggle--min"
-                      type="button"></button>
-                    <button class="catalog-services__range-toggle catalog-services__range-toggle--max"
-                      type="button"></button>
+              <fieldset class="catalog-services__group">
+                <legend class="catalog-services__title">Тип Жилья:</legend>
+                <ul class="catalog-services__list">
+                  <li class="catalog-services__item">
+                    <label class="control">
+                      <input class="control__input visually-hidden" type="radio" name="type-of-housing" value="hotel"
+                        checked />
+                      <span class="control__mark"></span>
+                      <span class="control__label">Гостиница</span>
+                    </label>
+                  </li>
+                  <li class="catalog-services__item">
+                    <label class="control">
+                      <input class="control__input visually-hidden" type="radio" name="type-of-housing"
+                        value="hostel" />
+                      <span class="control__mark"></span>
+                      <span class="control__label">Мотель</span>
+                    </label>
+                  </li>
+                  <li class="catalog-services__item">
+                    <label class="control">
+                      <input class="control__input visually-hidden" type="radio" name="type-of-housing"
+                        value="apartments" />
+                      <span class="control__mark"></span>
+                      <span class="control__label">Апартаменты</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+
+            <div class="catalog-services__wrapper">
+              <fieldset class="catalog-services__group">
+                <legend class="catalog-services__title">Стоимость, ₽:</legend>
+                <ul class="catalog-services__list catalog-services__price-list">
+                  <li class="catalog-services__item">
+                    <label class="min-range"><input class="range__input" type="number" placeholder="0"
+                        name="start-price" /></label>
+                  </li>
+                  <li class="catalog-services__item">
+                    <label class="max-range"><input class="range__input" type="number" placeholder="9000"
+                        name="end-price" /></label>
+                  </li>
+                </ul>
+                <div class="catalog-services__range">
+                  <div class="catalog-services__range-scale">
+                    <div class="catalog-services__range-bar" style="left: 0; width: 227px">
+                      <button class="catalog-services__range-toggle catalog-services__range-toggle--min"
+                        type="button"></button>
+                      <button class="catalog-services__range-toggle catalog-services__range-toggle--max"
+                        type="button"></button>
+                    </div>
                   </div>
                 </div>
+              </fieldset>
+              <div class="catalog__buttons-container">
+                <button class="button catalog-services__button catalog-services__button--secondary" type="submit">
+                  применить
+                </button>
+                <button class="button catalog-services__button catalog-services__button--transparent" type="reset">
+                  сбросить
+                </button>
               </div>
-            </fieldset>
-            <div class="catalog__buttons-container">
-              <button class="button catalog-services__button catalog-services__button--secondary" type="submit">
-                применить
-              </button>
-              <button class="button catalog-services__button catalog-services__button--transparent" type="reset">
-                сбросить
-              </button>
             </div>
           </div>
         </form>
       </section>
+
 
       <section class="sorting">
         <div class="sorting__container">
@@ -227,7 +234,7 @@
             </a>
             <div class="services-card-name-container">
               <span class="services-card__name">Гостиница</span>
-              <span class="services-card__price">От 5000 ₽</span>
+              <span class="services-card__price">От 4000 ₽</span>
             </div>
 
             <div class="services-card-button-container">
@@ -253,7 +260,7 @@
 
             <div class="services-card-name-container">
               <span class="services-card__name">Гостиница</span>
-              <span class="services-card__price">От 2500 ₽</span>
+              <span class="services-card__price">От 5000 ₽</span>
             </div>
 
             <div class="services-card-button-container">
@@ -279,7 +286,7 @@
 
             <div class="services-card-name-container">
               <span class="services-card__name">Гостиница</span>
-              <span class="services-card__price">От 1500 ₽</span>
+              <span class="services-card__price">От 2500 ₽</span>
             </div>
 
             <div class="services-card-button-container">
@@ -305,7 +312,7 @@
 
             <div class="services-card-name-container">
               <span class="services-card__name">Гостиница</span>
-              <span class="services-card__price">От 4000 ₽</span>
+              <span class="services-card__price">От 1500 ₽</span>
             </div>
 
             <div class="services-card-button-container">
