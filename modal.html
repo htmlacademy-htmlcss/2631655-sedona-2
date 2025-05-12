@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Document</title>
+  </head>
+
+  <body>
+
+    <div class="modal__containerr" data-test="modal">
+      <div class="modal modal__search-hotel">
+        <h2 class="modal__title">поиск гостиницы в седоне</h2>
+        <button class="button modal__close-button" type="button"></button>
+        <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
+
+          <div class="modal__date-wrapper">
+            <label class="modal__label modal__date-label" for="date-check-in">Дата Заезда:</label>
+            <input class="modal__input modal__input-date" type="text" placeholder="Укажите дату" value="27 апреля 2020"
+              name="date-check-in" id="date-check-in" required>
+            <span class="modal__input-text modal__input--error">Мы не можем отправить вас в прошлое.</span>
+          </div>
+
+          <div class="modal__date-wrapper">
+            <label class="modal__label modal__date-label" for="date-check-out">Дата Выезда:</label>
+            <input class="modal__input modal__input-date" type="text" placeholder="Укажите дату" value="1 сентября 2023"
+              name="date-check-out" id="date-check-out" required>
+            <span class="modal__input-text">На эти даты есть свободные номера. Пока есть.</span>
+          </div>
+
+          <div class="modal__human-counts-wrapper">
+            <div class="modal__adults-wrapper">
+              <label class="modal__label" for="adults">Взрослые:</label>
+              <div class="modal__button-wrapper">
+                <button class="modal__button-minus" type="button"></button>
+              </div>
+              <input class="modal__input" type="number" name="adults" id="adults" placeholder="1" value="2" required>
+              <div class="modal__button-wrapper">
+                <button class="modal__button-plus" type="button"></button>
+              </div>
+            </div>
+
+            <div class="modal__kids-wrapper">
+              <label class="modal__label modal__kids" for="kids">Дети:</label>
+              <span class="tooltip">
+                <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-kids"></button>
+                <span class="tooltip-text" role="tooltip" id="tooltip-label-kids">Укажите количество детей, которые
+                  будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+              </span>
+
+              <div class="modal__button-wrapper">
+                <button class="modal__button-minus" type="button"></button>
+              </div>
+              <input class="modal__input" type="number" name="kids" id="kids" placeholder="0" value="2" required>
+              <div class="modal__button-wrapper">
+                <button class="modal__button-plus" type="button"></button>
+              </div>
+            </div>
+          </div>
+
+          <button class="button modal__button" type="submit">найти</button>
+        </form>
+      </div>
+    </div>
+
+  </body>
+
+</html>

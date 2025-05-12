@@ -69,7 +69,7 @@
 
         <h2 class="visually-hidden">Список услуг с фильтрами</h2>
 
-        <form class="catalog-services__filter" action="https://echo.htmlacademy.ru/" method="get">
+        <form class="catalog-services__filter" action="https://echo.htmlacademy.ru/" method="get" data-test="filter">
           <div class="catalog__main-container">
 
             <div class="catalog-services__wrapper">
@@ -221,7 +221,7 @@
         </ul>
       </section>
 
-      <section class="services">
+      <section class="services" data-test="catalog">
         <ul class="services__list">
           <li class="services-card">
             <a class="services-card__link-image" href="#">
@@ -350,7 +350,7 @@
       </ul>
     </main>
 
-    <section class="newsletter newsletter-catalog">
+    <section class="newsletter newsletter-catalog" data-test="subscribe">
       <h2 class="visually-hidden">Новостная рассылка</h2>
       <span class="newsletter__header newsletter__header-catalog">подпишитесь на рассылку</span>
       <p class="newsletter__text newsletter__text-catalog">
@@ -365,7 +365,7 @@
       </form>
     </section>
 
-    <footer class="footer">
+    <footer class="footer" data-test="footer">
       <div class="footer__container">
         <section class="footer__social">
           <h2 class="visually-hidden">Социальные сети</h2>
