@@ -82,7 +82,7 @@ img {
   flex-wrap: wrap;
   list-style-type: none;
   line-height: 24px;
-  width: 340px;
+  width: 350px;
 }
 
 .navigation__link {
@@ -229,10 +229,6 @@ img {
 }
 
 /* =========================================================================================================== */
-
-.modal__containerr {
-  display: block;
-}
 
 .modal__container {
   display: none;
