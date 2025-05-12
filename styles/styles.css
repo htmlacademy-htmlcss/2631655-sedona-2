@@ -19,18 +19,17 @@ html {
 }
 
 body {
-  font-family: "PTSans", sans-serif;
-  width: 1200px;
-  margin: 0 auto;
-  font-weight: 400;
-  font-style: normal;
-  background-color: #f2f2f2;
-  color: #000000;
-  font-size: 18px;
-  line-height: 21px;
   display: flex;
   flex-direction: column;
+  width: 1200px;
   min-height: 100%;
+  font-family: "PTSans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+  color: #000000;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
@@ -150,9 +149,9 @@ img {
   padding: 21px 12px 20px;
 }
 
-.favorite-icon::after {
+.favorite-icon__product-count {
   position: absolute;
-  content: "12";
+  content: "";
   color: #ffffff;
   font-size: 10px;
   line-height: 10px;
@@ -209,14 +208,6 @@ img {
 
 .hero__img {
   padding-top: 51px;
-}
-
-.advantages {
-  width: 1200px;
-}
-
-.advantages__img {
-  max-width: 100%;
 }
 
 .advantages__main-header {
@@ -639,10 +630,15 @@ img {
 
 /* =========================================================================================================== */
 
-.recommendations__list {
+.recommendations {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recommendations__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   text-align: center;
   padding: 0;
   margin: 0;
@@ -650,14 +646,12 @@ img {
 }
 
 .recommendations__item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
   width: 400px;
   min-height: 385px;
   background-image: url("../images/house.svg");
   background-repeat: no-repeat;
-  background-position: 164px 80px;
+  background-position: center 81px;
 }
 
 .recommendations__item:nth-child(2) {
@@ -678,7 +672,7 @@ img {
   font-weight: 700;
   width: 505px;
   text-align: center;
-  margin: 0 0 20px 348px;
+  margin: 0;
   text-transform: uppercase;
 }
 
@@ -687,11 +681,11 @@ img {
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 102px 0 30px;
+  margin-top: 183px;
 }
 
 .recommendations__text {
-  margin: 0 auto;
+  margin: 0 auto 50px;
   width: 230px;
   color: #333333;
 }
@@ -699,9 +693,9 @@ img {
 .recommendations__main-text {
   font-size: 22px;
   line-height: 26px;
-  width: 490px;
   text-align: center;
-  margin: 0 0 64px 355px;
+  width: 490px;
+  margin: 20px 0 64px;
 }
 
 /* =========================================================================================================== */
@@ -758,8 +752,9 @@ img {
 
 .newsletter {
   background-image: url("../images/newsletter.jpg");
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-color: #8fceff;
   min-height: 414px;
   display: flex;
   flex-direction: column;
@@ -774,6 +769,7 @@ img {
   text-transform: uppercase;
   margin: 0 auto;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .newsletter__text {
@@ -818,7 +814,6 @@ img {
 
 .newsletter__button {
   width: 232px;
-  height: 52px;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
@@ -848,10 +843,30 @@ img {
 }
 
 .footer__container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 46px 70px 30px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin: 40px 70px 30px;
+  column-gap: 38px;
+}
+
+.footer__social {
+  display: grid;
+  grid-column: 1 / 2;
+  padding-top: 6px;
+}
+
+.footer__contacts {
+  display: grid;
+  grid-column: 2 / 7;
+  padding-top: 6px;
+  padding-left: 2px;
+}
+
+.footer__about {
+  display: grid;
+  grid-column: 7 / 8;
+  padding-top: 8px;
+  width: 115px;
 }
 
 .footer__list {
@@ -860,6 +875,7 @@ img {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  width: 142px;
 }
 
 .footer__link-socials {
@@ -950,6 +966,7 @@ img {
 
 .catalog-services {
   background-image: url("../images/filter-bg.jpg");
+  background-size: cover;
   background-color: #82b3d3;
   background-repeat: no-repeat;
   min-height: 412px;
@@ -1021,8 +1038,8 @@ img {
 
 .control__mark {
   position: absolute;
-  width: 21px;
-  height: 21px;
+  width: 20px;
+  height: 20px;
   background-color: #ffffff;
   border-radius: 4px;
   left: -2px;
@@ -1303,6 +1320,9 @@ img {
 
 .sorting {
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 50px 0 40px;
 }
 
 .sorting__list {
@@ -1314,16 +1334,6 @@ img {
 
 .sorting__item:not(:first-child) {
   padding-left: 8px;
-}
-
-.sorting__container {
-  display: flex;
-  width: 1200px;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 70px;
-  margin-top: 50px;
-  margin-bottom: 40px;
 }
 
 .sorting__result {
@@ -1382,7 +1392,7 @@ img {
 
 .services-card__heading {
   margin: 12px 0 16px 20px;
-  text-align-last: left;
+  text-align: left;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
@@ -1400,6 +1410,14 @@ img {
 .services-card__name,
 .services-card__price {
   color: #333333;
+}
+
+.services-card__name {
+  text-align: left;
+}
+
+.services-card__price {
+  text-align: right;
 }
 
 .services-card__link {
@@ -1455,8 +1473,7 @@ img {
   color: #ffffff;
   border-radius: 4px;
   font-size: 16px;
-  width: 140px;
-  height: 36px;
+  padding: 8px 20px;
   font-weight: 700;
   line-height: 20px;
   text-transform: uppercase;
@@ -1468,6 +1485,7 @@ img {
 
 .services-card__button-favorite--selected {
   background-color: #7db54f;
+  padding: 8px 18px;
 }
 
 .services-card__rating {
@@ -1496,7 +1514,7 @@ img {
   content: "";
   border: 1px solid #e6e6e6;
   width: 1060px;
-  bottom: 96px;
+  bottom: 98px;
 }
 
 .pagination__link {
@@ -1517,9 +1535,8 @@ img {
 
 .pagination__item:not(:first-child) .pagination__link:hover,
 .pagination__item:not(:first-child) .pagination__link:focus {
-  border: 1px solid #82b3d3;
+  outline: 1px solid #82b3d3;
   background-color: #68a2ca;
-  padding: 12px 0;
 }
 
 .pagination__link--active:hover {
@@ -1538,10 +1555,9 @@ img {
 
 .pagination__link-dots {
   display: block;
-  box-sizing: border-box;
   min-width: 60px;
   border-radius: 4px;
-  padding: 10px 0;
+  padding: 16px 0;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
