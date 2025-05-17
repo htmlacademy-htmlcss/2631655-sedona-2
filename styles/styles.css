@@ -219,6 +219,7 @@ img {
   color: var(--primary-text-color);
   text-transform: uppercase;
   margin-left: 20px;
+  text-align: center;
 }
 
 .navigation-user__link-wanna-here:hover,
@@ -689,8 +690,7 @@ img {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
-.advantages__item:first-child,
-.advantages__item:last-child {
+.advantages__item--with-image {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1008,6 +1008,9 @@ img {
   -webkit-column-gap: 38px;
   -moz-column-gap: 38px;
   column-gap: 38px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer__social {
@@ -1553,6 +1556,8 @@ img {
 }
 
 .sorting__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 70px;
 }
@@ -1562,7 +1567,8 @@ img {
   display: -ms-flexbox;
   width: 160px;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 8px;
   margin: 0;
   padding: 0;
@@ -1666,7 +1672,8 @@ img {
   color: var(--secondary-button-color);
   font-size: 22px;
   width: 140px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .services-card__name,
